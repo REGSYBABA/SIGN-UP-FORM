@@ -20,43 +20,51 @@
 
            <div class="middle-right-wing">
                 <p>Lets do this!</p>
-                <form action="#" class="form">
-
+                <form action="#" id="my-form" method="get">
                     <div class="inputs">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" required="">
+                        <input required type="text" name="first-name" id="first-name">
+                        <div class="error"></div>
                     </div>
+                    
                     <div class="inputs">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" required="">
+                        <input required type="text" name="last-name" id="last-name">
+                        <div class="error"></div>
                     </div>
     
                     <div class="inputs">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required="">
+                        <input required type="email" name="email" id="email">
+                        <div class="error"></div>
                     </div>
     
                     <div class="inputs">
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="" name="phoneNumber" id="phoneNumber">
+                        <input required type="tel" name="phoneNumber" id="phoneNumber">
+                        <div class="error"></div>
                     </div>
     
                     <div class="inputs">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required="">
+                        <input required type="password" name="password" id="password">
+                        <div class="error"></div>
                     </div>
     
                     <div class="inputs">
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword" required="">
+                        <input required type="password" name="confirmPassword" id="confirmPassword">
+                        <div class="error"></div>
                     </div>
                 </form>
-           </div>
-           <div class="bottom-wing">
-                <button type="submit">create account</button>
+            </div>
+            <div class="bottom-wing">
+                 <button type="submit" form="my-form">create account</button>
                 <h3>Already have an account...? <a href="#">Log in</a></h3>
             </div>    
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

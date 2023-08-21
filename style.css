@@ -7,14 +7,18 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: #f9fafb;
+    background-color: #596D48;
     display: flex;
 }
 
 .left-wing{
     width: 40vw;
     height: 100vh;
-    background-color: black;
+    background-color: white;
+    background-image: url('img/sign-up-8694031-6983270.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .right-wing{
@@ -71,16 +75,41 @@ label{
     flex-flow: column wrap;
     gap: 10px;
     width: 30%;
-    margin-left: 30px
+    margin-left: 30px;
 }
 
 .middle-right-wing input {
     box-sizing: border-box;
-    border: 1px solid #e5e7eb;
     border-radius: 4px;
     padding: 4px 8px;
     width: 100%;
-    height: 30px;
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid rgb(255, 188, 121);  
+    transition: all .4s ease-in-out;
+}
+
+input:focus{
+    transform: scale(0.9);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    border: none;
+    outline: none;
+}
+
+/* input:invalid:focus{
+    border: 2px solid rgb(180, 42, 65)
+}
+
+input:valid{
+    border: rgb(0, 183, 255) 2px solid;
+} */
+
+.inputs.success input:valid{
+    border: rgb(0, 183, 255) 2px solid;
+}
+
+.inputs.error input:invalid{
+    border: 2px solid rgb(180, 42, 65)
 }
 
 .bottom-wing{
@@ -88,20 +117,22 @@ label{
     margin: 60px 40px 30px 55px;
     line-height: 4rem;
 }
-button{
+
+button[type='submit']{
     width: 14rem;
     height: 3rem;
     border-radius: 12px;
     text-transform: uppercase;
     border: none;
     font-weight: 700;
-    background-color: #596D48;
-    color: white;
+    background-color: burlywood;
+    color: black;
+    font-size: 16px;
 }
 
 a{
     text-decoration: none;
-    color: #596D48;
+    color: white;
 }
 
 a:hover{
