@@ -57,13 +57,13 @@ const validateInputs = () => {
     const password2Val = password2.value.trim()
 
     if (fnameVal === ''){
-       setError(fname, 'first name is required')
+       setError(fname, 'First name is required')
     } else {
         setSuccess(fname)
     }
 
     if (lnameVal === ''){
-        setError(lname, 'last name is required')
+        setError(lname, 'Last name is required')
     } else {
          setSuccess(lname)
     }

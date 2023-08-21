@@ -6,14 +6,13 @@
 
 .container{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #596D48;
     display: flex;
 }
 
 .left-wing{
     width: 40vw;
-    height: 100vh;
     background-color: white;
     background-image: url('img/sign-up-8694031-6983270.png');
     background-repeat: no-repeat;
@@ -30,7 +29,7 @@
 
 .top-right-wing{
     padding: 10px 10px 50px 30px;
-    margin: 20px 40px 30px 30px;
+    margin: 0px 40px 30px 30px;
     font-weight: 800;
     width: 80%;
     font-size: 1.2rem;
@@ -104,11 +103,11 @@ input:valid{
     border: rgb(0, 183, 255) 2px solid;
 } */
 
-.inputs.success input:valid{
+.inputs.success:focus input{
     border: rgb(0, 183, 255) 2px solid;
 }
 
-.inputs.error input:invalid{
+.inputs.error input{
     border: 2px solid rgb(180, 42, 65)
 }
 
