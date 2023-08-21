@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     width: 60vw;
+    height: 100vh;
 }
 
 .top-right-wing{
